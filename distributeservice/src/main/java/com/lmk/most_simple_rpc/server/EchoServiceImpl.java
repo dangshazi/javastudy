@@ -2,6 +2,10 @@ package com.lmk.most_simple_rpc.server;
 
 /**
  * Created by lmk on 2017/6/8.
+ * 服务实现类
  */
-public class EchoServiceImpl {
+public class EchoServiceImpl implements EchoService {
+    public String echo(String ping) {
+        return ping != null ? ping :"I'm OK!";
+    }
 }
